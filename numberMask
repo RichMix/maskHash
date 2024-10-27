@@ -1,0 +1,21 @@
+# create a .txt with the hashes
+
+nano sky_mask_hashes.txt 
+
+$1$MASK$sF5H.9IaPYBgdwOqsCN9C.
+$1$MASK$k7JocBSf5T/E8N8X/Ybfe.
+$1$MASK$HzB6R7Q87oIDF3cxRIA0F0
+
+# ctrl O -> Enter to Save -> ctrl X to exit
+
+
+hashcat -m 500 -a 3 -O -w 3 sky_mask_hashes.txt "SKY-MASK-?d?d?d?d
+
+hashcat -m 500 --show sky_mask_hashes.txt
+
+
+$1$MASK$k7JocBSf5T/E8N8X/Ybfe.:SKY-MASK-4965
+$1$MASK$HzB6R7Q87oIDF3cxRIA0F0:SKY-MASK-9636
+$1$MASK$sF5H.9IaPYBgdwOqsCN9C.:SKY-MASK-2159
+                                                          
+
